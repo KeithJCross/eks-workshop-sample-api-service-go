@@ -15,7 +15,7 @@ func main() {
 
 		f := fib()
 
-		res := &response{Message: "Hello World"}
+		res := &response{Message: "Hello Taco Tuesday"}
 
 		for _, e := range os.Environ() {
 			pair := strings.Split(e, "=")
@@ -35,7 +35,7 @@ func main() {
 
 		io.WriteString(w, string(out))
 
-		fmt.Println("Big Cats scarier than Big Dogs")
+		fmt.Println("Hello World - the log file")
 	})
 	http.ListenAndServe(":8080", nil)
 }
